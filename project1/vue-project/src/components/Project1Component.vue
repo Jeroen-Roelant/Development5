@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-//let myNumber = ref(0);
+let myNumber = ref(0);
 //let checked = ref(false);
 
-let myNumber = 0;
+//let myNumber = 0;
 // let checked = false;
 
 function getRndInt(min: number, max: number): number {
@@ -12,7 +12,7 @@ function getRndInt(min: number, max: number): number {
   }
 
 function myRandom() {
-    myNumber = getRndInt(1, 10);
+    myNumber.value = getRndInt(1, 10)
     // myNumber = ref(getRndInt(1, 10));
     console.log(myNumber);
     // console.log(checked);
